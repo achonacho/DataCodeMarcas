@@ -228,3 +228,89 @@ ul {
 .card .back .info-button:hover {
     background-color: #252645;
 }
+
+/*----------------------------------------------------------INICIO SESIÓN / REGISTRO------------------------------------------------------------------------*/
+
+
+.contenedor{
+    width:100% ;
+    padding: 15px;
+
+}
+.formulario{
+    
+    background: white;
+    margin-top: 100px;
+}
+h1{
+    padding-top: 20px;  
+    text-align: center;
+    color: black;
+    font-size: 40px;
+
+}
+img{
+    padding-top: 4px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+
+}
+input[type="text"],input[type="password"]{
+
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+
+}
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px aolid #aaa;
+}
+.button{
+
+    border: none;
+    width: 90%;
+    font-size: 24px;
+    color: white;
+    background-color: #6160d7;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+.button:hover{
+
+    background-color: #1a1929;
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: #1a1929;
+    font-weight: 600px;
+}
+.link:hover{
+    color: #1a1929;
+}
+@media(min-width: 768px){
+    .formulario{
+         margin-top: 150px;
+         width: 550px;
+         margin: auto;
+         border-radius: 2%;
+    }
+}
+
+.registro{
+    color: blue;
+}
+
+.terminos-contenedor {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
