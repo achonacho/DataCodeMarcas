@@ -1,0 +1,70 @@
+/*MENU DESPLEGABLE*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /* Ajustar el relleno superior para evitar que el contenido se solape con el menú fijo */
+    padding-top: 60px; /* Ajustar según la altura del menú */
+    background-color: #252645;
+}
+
+header {
+    position: fixed; /* Hacer que el menú sea fijo */
+    top: 0; /* Fijar en la parte superior de la página */
+    width: 100%;
+    background-color: #1a1929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Verdana";
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    background-color: #1a1929; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 55px;
+}
+
+.nav li {
+    width: auto;
+    
+}
+.nav li a {
+    color: azure;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    margin-left: 25px;
+}
+.nav li a:hover {
+    background-color: #252645;
+}
+/* Estilo para los botones */
+.buttons button {
+    font-family: "Verdana";
+    background-color: #6160d7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px; /* Espacio entre los botones */
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #252645;
+}
+
+/* Alineación de los botones */
+.buttons {
+    margin-left: auto; /* Mueve los botones al margen derecho */
+    display: flex;
+    align-items: center; /* Centra los botones verticalmente */
+}
