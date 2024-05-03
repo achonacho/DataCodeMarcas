@@ -68,3 +68,58 @@ ul {
     display: flex;
     align-items: center; /* Centra los botones verticalmente */
 }
+/*INDEX*/
+.IntroduccionIndex{
+    float: left;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+}
+.TituloIntroduccionIndex{
+    text-align: center;
+}
+.HistoriaIndex{
+    float: right;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+    top: 140px;
+}
+.TituloHistoriaIndex{
+    text-align: center;
+}
+.ValoresIndex{
+    float: left;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+    top: 180px;
+}
+.TituloValoresIndex{
+    text-align: center;
+}
+.MisionVisionIndex{
+    float: right;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+    top: 280px;
+}
+.TituloMisionVisionIndex{
+    text-align: center;
+}
+.EquipoIndex{
+    float: left;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+    top: 340px;
+}
+.TituloEquipoIndex{
+    text-align: center;
+}
