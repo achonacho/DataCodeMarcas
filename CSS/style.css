@@ -68,7 +68,7 @@ ul {
     display: flex;
     align-items: center; /* Centra los botones verticalmente */
 }
-/*INDEX*/
+/*--------------------------------------------------QUIENES SOMOS (index)-------------------------------------------------------*/
 .IntroduccionIndex{
     float: left;
     color: white;
@@ -319,108 +319,104 @@ p{
     text-align: center; 
     margin-bottom: 20px; 
 }
-/*----------------------------------------------------------PERSONAJES------------------------------------------------------------------------*/
-.container_cardsPersonajes {
+
+/*----------------------------------------------------------PERSONAJES 2------------------------------------------------------------------------*/
+h1 {
+    margin-top: auto;
+    text-align: center;
+    font-size: 80px;
+    color: #6160d7;
+    font-family: "Verdana";
+    /*Insertar tipo grafia para la web*/
+}
+
+.titulo1 {
+    margin-top: 250px;
+}
+
+.container_cards{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ajuste para distribuir las tarjetas */
+    justify-content: center;
 }
 
-.cardPersonajes {
-    width: 30%; /* Ajuste del ancho de la tarjeta */
+.card {
+    width: 300px;
     margin: 10px;
     transition: all ease 300ms;
 }
 
-.cardPersonajes:hover {
-    width: 32%; /* Ajuste del ancho en hover */
+.card:hover {
+    width: 350px;
 }
 
-.cardPersonajes .coverPersonajes {
+.card .cover {
     width: 100%;
     height: 250px;
     position: relative;
     overflow: hidden;
 }
 
-.cardPersonajes .coverPersonajes img {
+.card .cover img{
     height: 250px;
     display: block;
     margin: auto;
     position: relative;
     top: 40px;
     z-index: 1;
-    filter: drop-shadow(5px 5px 4px rgb(0, 0, 0.5));
+    filter: drop-shadow(5px 5px 4px rgb(0,0,0,0.5));
     transition: all ease 400ms;
 }
 
-.cardPersonajes:hover .coverPersonajes img {
+.card:hover .cover img {
     top: 0px;
     filter: none;
 }
 
-.cardPersonajes .img_backPersonajes {
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    bottom: -80px;
-    left: 0;
-    background-size: cover;
-    border-radius: 20px;
-    transition: all ease 300ms;
-}
-
-.cardPersonajes:nth-of-type(1) .img_backPersonajes {
-    background-image: url(img/fondo1.png);
-}
-
-.cardPersonajes:nth-of-type(2) .img_backPersonajes {
-    background-image: url(img/fondo2.png);
-}
-
-.cardPersonajes:nth-of-type(3) .img_backPersonajes {
-    background-image: url(img/fondo3.png);
-}
-
-.cardPersonajes:hover .img_backPersonajes {
-    bottom: -40px;
-}
-
-.cardPersonajes .descriptionPersonajes {
-    background: whitesmoke;
-    margin-top: -10px;
+.card .description {
+    background: #1a1929;
+    margin-top: 10px;
     padding: 20px;
     border-radius: 0px 0px 20px 20px;
     transition: all ease 300ms;
 }
 
-.cardPersonajes .descriptionPersonajes h2 {
-    margin-top: 10px;
+.card:hover .description{
+    padding: 40px;
 }
 
-.cardPersonajes .descriptionPersonajes p {
+.card .description h2 {
+    color: white;
+    font-family: "Verdana";
     margin-top: 10px;
-    text-align: justify;
+    font-family: "Verdana";
 }
 
-.cardPersonajes .descriptionPersonajes input {
+.card .description p {
+    color: white;
+    font-family: "Verdana";
+    margin-top: 10px;
+    text-align: left;
+}
+
+.card .description input {
     padding: 10px 40px;
     margin-top: 20px;
-    display: block;
-    margin: 20px auto 0 auto;
+    margin-left: 16px;
     border: none;
     background: #6160d7;
     color: white;
+    font-family: "Verdana";
     font-size: 14px;
     cursor: pointer;
     border-radius: 8px;
     transition: all ease 300ms;
 }
 
-.cardPersonajes .descriptionPersonajes input:hover {
+.card .description input:hover {
     background: #C79DC3;
 }
 
@@ -428,7 +424,6 @@ p{
     width: 300px;
     height: 300px;
 }
-
 /*----------------------------------------------------------PRODUCTOS------------------------------------------------------------------------*/
 
 /*Imagen de fonde para los productos*/
@@ -828,6 +823,7 @@ p{
     text-align: left;
     position: relative;
 }
+
 
 
 
