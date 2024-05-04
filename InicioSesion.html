@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="img/fav-iconII.png" type="image/x-icon">
     <title>Inicio Sesión</title>
 </head>
+
 <body>
-
-    <form class="formulario" action="Index.html" method="GET">
-
+    <form class="formulario" action="Index.html" method="GET" onsubmit="return validarFormulario()">
         <h1>LOGIN DE USUARIO</h1>
         <div class="contenedor">
-          
             <div class="input-contenedor">
-                <img  class="icon" src="icon/carta.png"/>
-                <input type="text" placeholder="Correo electrónico">
+                <img class="icon" src="icon/carta.png" />
+                <input id="email" type="text" placeholder="Correo electrónico">
             </div>
-
             <div class="input-contenedor">
-                <img  class="icon" src="icon/llave.png"/>
-                <input type="password" placeholder="Contraseña">
+                <img class="icon" src="icon/llave.png" />
+                <input id="password" type="password" placeholder="Contraseña">
             </div>
             <input type="submit" value="Login" class="button">
             <p>Al registrarse, acepta nuestras condiciones de uso y política de privacidad</p>
             <p>¿No tienes cuenta? <a class="link" href="Registro.html"><span class="registro">Registro</span></a></p>
-
         </div>
-
-
-
     </form>
+    <script>
+        // Definir los usuarios y contraseñas correctas
+        const usuarios = {
+            "fariasd99@gmail.com": "danielfarias",
+            "ignacho.mog03": "nacho",
+            "danielgarro35@gmail.com": "danielgonzalez"
+        };
 
+        function validarFormulario() {
+            // Obtener los valores ingresados por el usuario
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
 
-
-    
+            // Verificar si el correo electrónico existe en la lista de usuarios
+            if (usuarios.hasOwnProperty(email)) {
+                // Si el correo existe, verificar la contraseña
+                if (usuarios[email] === password) {
+                    alert("Inicio de sesión exitoso");
+                    return true; // Permitir el envío del formulario
+                } else {
+                    alert("Contraseña incorrecta");
+                    return false; // Evitar el envío del formulario
+                }
+            } else {
+                alert("El correo electrónico ingresado no está registrado");
+                return false; // Evitar el envío del formulario
+            }
+        }
+    </script>
 </body>
 </html>

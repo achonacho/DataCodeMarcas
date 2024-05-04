@@ -1,42 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/fav-iconII.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Registro de usuario</title>
 </head>
 <body>
-    
-    <form class="formulario"  action="Index.html" method="GET">
+    <form class="formulario" action="#" method="POST" id="registroForm">
         <h1>Registro de Usuario</h1>
         <div class="contenedor">
             <div class="input-contenedor">
-                <img class="icon" src="icon/persona.png"/>
-                <input type="text" placeholder="Nombre de Usuario">
+                <img class="icon" src="icon/persona.png" />
+                <input id="username" type="text" placeholder="Nombre de Usuario">
             </div>
-            
+
             <div class="input-contenedor">
-                <img class="icon" src="icon/carta.png"/>
-                <input type="text" placeholder="Correo electrónico">
+                <img class="icon" src="icon/carta.png" />
+                <input id="email" type="text" placeholder="Correo electrónico">
             </div>
-    
+
             <div class="input-contenedor">
-                <img class="icon" src="icon/llave.png"/>
-                <input type="password" placeholder="Contraseña">
+                <img class="icon" src="icon/llave.png" />
+                <input id="password" type="password" placeholder="Contraseña">
             </div>
-            
+
             <!-- Cuadro de selección para aceptar términos de privacidad -->
             <div class="terminos-contenedor">
                 <input type="checkbox" id="terminos" name="terminos">
                 <label for="terminos">Acepto los términos de privacidad</label>
             </div>
-            
+
             <input type="submit" value="Registro" class="button">
-            
-            <p>¿Ya tiene una cuenta? <a class="link" href="InicioSesion.html"><span class="registro">Inicio de Sesión</span></a></p>
+
+            <p>¿Ya tiene una cuenta? <a class="link" href="InicioSesion.html"><span class="registro">Inicio de
+                        Sesión</span></a></p>
         </div>
     </form>
+
+    <script>
+        // Función para registrar un nuevo usuario
+        function registrarUsuario(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Obtener los valores ingresados por el usuario
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            // Verificar si los términos de privacidad están aceptados
+            let terminosAceptados = document.getElementById("terminos").checked;
+
+            // Verificar si todos los campos están completos y los términos aceptados
+            if (username && email && password && terminosAceptados) {
+                // Crear un nuevo objeto de usuario
+                let nuevoUsuario = {
+                    username: username,
+                    email: email,
+                    password: password
+                };
+
+                // Obtener los usuarios registrados del almacenamiento local
+                let usuariosRegistrados = JSON.parse(localStorage.getItem("usuarios"));
+
+                // Verificar si ya hay usuarios registrados
+                if (!usuariosRegistrados) {
+                    usuariosRegistrados = [];
+                }
+
+                // Agregar el nuevo usuario al array de usuarios registrados
+                usuariosRegistrados.push(nuevoUsuario);
+
+                // Almacenar los usuarios registrados en el almacenamiento local
+                localStorage.setItem("usuarios", JSON.stringify(usuariosRegistrados));
+
+                // Mostrar un mensaje de registro exitoso
+                alert("Usuario registrado correctamente");
+
+                // Limpiar los campos del formulario
+                document.getElementById("registroForm").reset();
+
+            } else {
+                // Mostrar un mensaje de error si algún campo está incompleto o los términos no están aceptados
+                alert("Por favor, complete todos los campos y acepte los términos de privacidad.");
+            }
+        }
+
+        // Agregar un evento de escucha al formulario de registro
+        document.getElementById("registroForm").addEventListener("submit", registrarUsuario);
+    </script>
 
 </body>
 </html>
