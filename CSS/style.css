@@ -428,3 +428,409 @@ p{
     width: 300px;
     height: 300px;
 }
+
+/*----------------------------------------------------------PRODUCTOS------------------------------------------------------------------------*/
+
+/*Imagen de fonde para los productos*/
+.fondo_productos {
+    position: relative;
+    left: auto;
+    margin-top: auto;
+}
+
+.imagen_fondo_productos {
+   width: 1000px;
+   height: 650px;
+}
+
+/*Ropa*/
+.camisa1 {
+    position: absolute;
+    left: 0px;
+    transition: transform 0.3s ease; 
+}
+
+.camisa1:hover {
+    transform: scale(1.1); 
+}
+
+.camisa1_1 {
+    width: 250px;
+    height: auto;
+}
+
+/*Jugetes*/
+.juguete2 {
+    position: absolute;
+    left: 0px;
+    top: 370px;
+    transition: transform 0.3s ease; 
+}
+
+.juguete2:hover {
+    transform: scale(1.1); 
+}
+
+.juguete2_2 {
+    width: 250px;
+    height: auto;
+}
+
+.juguete1 {
+    position: absolute;
+    left: 480px;
+    top: 300px;
+    transition: transform 0.3s ease; 
+}
+
+.juguete1:hover {
+    transform: scale(1.1); 
+}
+
+.juguete1_1 {
+    width: 250px;
+    height: auto;
+}
+
+.juguete3 {
+    position: absolute;
+    left: 820px;
+    top: 530px;
+    transition: transform 0.3s ease; 
+}
+
+.juguete3:hover {
+    transform: scale(1.1); 
+}
+
+.juguete3_3 {
+    width: 100px;
+    height: auto;
+}
+
+/*Libros*/
+.libro1 {
+    position: absolute;
+    left: 750px;
+    top: 100px;
+    transition: transform 0.3s ease; 
+}
+
+.libro1:hover {
+    transform: scale(1.1); 
+}
+
+.libro1_1 {
+    width: 200px;
+    height: auto;
+}
+
+.libro2 {
+    position: absolute;
+    left: 275px;
+    top: 100px;
+    transition: transform 0.3s ease; 
+}
+
+.libro2:hover {
+    transform: scale(1.1); 
+}
+
+.libro2_2 {
+    width: 200px;
+    height: auto;
+}
+
+.libro3 {
+    position: absolute;
+    left: 525px;
+    top: 110px;
+    transition: transform 0.3s ease; 
+}
+
+.libro3:hover {
+    transform: scale(1.1); 
+}
+
+.libro3_3 {
+    width: 185px;
+    height: auto;
+}
+
+/*Gorras*/
+
+.gorra1 {
+    position: absolute;
+    left: 230px;
+    top: 480px;
+    transition: transform 0.3s ease; 
+}
+
+.gorra1:hover {
+    transform: scale(1.1); 
+}
+
+.gorra1_1 {
+    width: 185px;
+    height: auto;
+}
+
+.gorra2 {
+    position: absolute;
+    left: 600px;
+    top: 500px;
+    transition: transform 0.3s ease; 
+}
+
+.gorra2:hover {
+    transform: scale(1.1); 
+}
+
+.gorra2_2 {
+    width: 185px;
+    height: auto;
+}
+
+.gorra3 {
+    position: absolute;
+    left: 420px;
+    top: 480px;
+    transition: transform 0.3s ease; 
+}
+
+.gorra3:hover {
+    transform: scale(1.1); 
+}
+
+.gorra3_3 {
+    width: 185px;
+    height: auto;
+}
+
+/*Medias*/
+.medias1 {
+    position: absolute;
+    left: 230px;
+    top: 300px;
+    transition: transform 0.3s ease; 
+}
+
+.medias1:hover {
+    transform: scale(1.1); 
+}
+
+.medias1_1 {
+    width: 185px;
+    height: auto;
+}
+
+.medias2 {
+    position: absolute;
+    left: 750px;
+    top: 300px;
+    transition: transform 0.3s ease; 
+}
+
+.medias2:hover {
+    transform: scale(1.1); 
+}
+
+.medias2_2 {
+    width: 185px;
+    height: auto;
+}
+/*Div de productos CAMISAS*/
+.container_products2{
+    background-color: #1a1929;
+    width: auto;
+    height: auto;
+}
+
+.camisas {
+    font-family: "Verdana";
+    color: white;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.container_mercancia1 {
+    background-color: #6160d7;
+    position: relative;
+    display: inline-block; 
+    margin: 40px 50px; 
+    width: 400px; 
+    height: 450px; 
+    vertical-align: top;
+}
+
+.container_mercancia2 {
+    background-color: #6160d7;
+    position: relative;
+    display: inline-block; 
+    margin: 40px 50px;
+    width: 400px;
+    height: 500px;
+    vertical-align: top;
+}
+
+.container_mercancia3 {
+    background-color: #6160d7;
+    position: relative;
+    display: inline-block; 
+    margin: 40px 50px;
+    width: 400px; 
+    height: 450px; 
+    vertical-align: top;
+}
+
+.container_info_productos {
+    background-color: #1a1929;
+    margin-top: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.camisa1_producto {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    transition: transform 0.3s ease; 
+}
+
+.camisa1_producto:hover {
+    transform: scale(1.05); 
+}
+
+.camisa2_producto {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease; 
+}
+
+.camisa2_producto:hover {
+    transform: scale(1.05);  
+}
+
+.camisa3_producto {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    height: 350px;
+    transition: transform 0.3s ease; 
+}
+
+.camisa3_producto:hover {
+    transform: scale(1.05); 
+}
+.titulo_producto {
+    color: white;
+    font-family: "Verdana";
+}
+
+.info_producto {
+    color: white;
+    font-family: "Verdana";
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: auto;
+    text-align: left;
+}
+
+.precio_producto {
+    color: white;
+    font-family: "Verdana";
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: left;
+}
+
+/*Div de productos Juguetes*/
+.container_products3{
+    background-color: #1a1929;
+    width: auto;
+    height: auto; 
+}
+
+.juguetes {
+    font-family: "Verdana";
+    color: white;
+    margin-left: 50px;
+    text-align: left;
+    position: relative;
+}
+
+.juguete2_producto {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 350px;
+    transition: transform 0.3s ease; 
+}
+
+.juguete2_producto:hover {
+    transform: scale(1.05); 
+}
+
+.juguete3_producto {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 350px;
+    height: 350px;
+    transition: transform 0.3s ease; 
+}
+
+.juguete3_producto:hover {
+    transform: scale(1.05); 
+}
+
+/*Div de productos LIBROS*/
+.container_products4{
+    background-color: #1a1929;
+    width: auto;
+    height: auto; 
+}
+
+.libros {
+    font-family: "Verdana";
+    color: white;
+    margin-left: 50px;
+    text-align: left;
+    position: relative;
+}
+
+.libro1_producto {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    height: 350px;
+    transition: transform 0.3s ease; 
+}
+
+.libro1_producto:hover {
+    transform: scale(1.05); 
+}
+
+/*Div de productos NOVEDADES*/
+.container_products5{
+    background-color: #1a1929;
+    width: auto;
+    height: auto; 
+}
+
+.novedades {
+    font-family: "Verdana";
+    color: white;
+    margin-left: 50px;
+    text-align: left;
+    position: relative;
+}
+
+
+
+
+
+
