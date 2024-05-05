@@ -6,133 +6,163 @@
     <link rel="icon" href="img/fav-iconII.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <title>DataCode</title>
+    <style>
+        body {
+            padding-top: 60px;
+            background-color: #252645;
+            background-image: url(img/31806-388997519_small.mp4);
+        }
+        header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #1a1929;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Verdana";
+        z-index: 1000;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .video-wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #video-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+        
 </head>
-<body>
-    <!--MENU DESPLEGABLE-->
-    <header>
-        <ul class="nav">
-            <li><a href="Index.html">Quiénes Somos</a></li>
-            <li><a href="JuegosExpansiones.html">Juegos</a></li>
-            <li><a href="Productos.html">Productos</a></li>
-            <li><a href="Personajes.html">Personajes</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-            <!-- Agregando los botones -->
-            <li class="buttons">
-                <a href="InicioSesion.html"><button>Iniciar sesión</button></a>
-                <a href="Registro.html"><button>Registrarse</button></a>
-            </li>
-        </ul>
-    </header>
-
-     <!-- Agrupamos los 3 juegos superiores en un contenedor para poder moverlos en la parte superior con la propiedad ( flexbox ) 
-    de esta manera los podemos ordenar por filas -->
-
-    <div class="contenedorarriba">
-        <div class="card">
-            
-            <div class="face front">
-                <img src="img/juego1.jpg" alt="">
-                
-            </div>
-
-            <div class="face back">
-                <h3>KINGDOM OF WORLDS</h3>
-                <p>"Kingdom of Worlds" es un emocionante juego de estrategia y exploración que te invita a 
-                    sumergirte en un universo de mundos interconectados.</p>
-                <div class="link"><a href="#"><button class="info-button">Más Información</button></a></div>
-               
-            </div>
-        </div>
-
-        <div class="card">
-            
-            <div class="face front">
-                <img src="img/juego2.jpg" alt="">
-                
-            </div>
-
-            <div class="face back">
-                <h3>THE LAST ASHES</h3>
-                <p>"The Last Ashes" te sumerge en un mundo post-apocalíptico donde la humanidad lucha por 
-                    sobrevivir en un paisaje desolado.Como un superviviente solitario, debes explorar ruinas y
-                     enfrentarte a peligros constantes</p>
-                <div class="link"><a href="#"><button class="info-button">Más Información</button></a></div>
-                
-            </div>
-        </div>
-
-
-        <div class="card">
-            
-            <div class="face front">
-                <img src="img/juego3.jpg" alt="">
-                
-            </div>
-
-            <div class="face back">
-                <h3>ASSASIN'S DRAGONS</h3>
-                <p>"Assassin's Dragons" fusiona la emoción de la acción sigilosa con la majestuosidad de los 
-                    dragones en un mundo de fantasía épica. </p>
-                <div class="link"><a href="#"><button class="info-button">Más Información</button></a></div>
-               
-               
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Agrupamos los 3 juegos inferiores en un contenedor para poder moverlos en la parte inferior con la propiedad ( flexbox ) -->
-
-    <div class="contenedorabajo">
-
-        <div class="card">
-            
-            <div class="face front">
-                <img src="img/juego4.jpg" alt="">
-                
-            </div>
-
-            <div class="face back">
-                <h3>MONSTER HUNTERS</h3>
-                <p>"Monster Hunters" te transporta a un mundo lleno de monstruosidades y desafíos épicos. Como cazador intrépido, 
-                    te embarcarás en expediciones peligrosas para rastrear y enfrentarte a una variedad de criaturas aterradoras.</p>
-                    <div class="link"><a href="#"><button class="info-button">Más Información</button></a></div>
-               
-            </div>
-        </div>
-
-        <div class="card">
-            
-            <div class="face front">
-                <img src="img/juego5.jpg" alt="">
-            
-            </div>
-
-            <div class="face back">
-                <h3>FINAL EMPIRE</h3>
-                <p>"Final Empire" te sumerge en un mundo donde la magia y la tecnología chocan en una lucha por el dominio. Como líder 
-                    de una facción en este conflicto, debes explorar un vasto imperio lleno de intrigas políticas, poderosos hechiceros y antiguas ruinas.</p>
-                    <div class="link"><a href="#"><button class="info-button">Más Información</button></a></div>
-              
-            </div>
-        </div>
-
-        <div class="card">
-            
-            <div class="face front">
-                <img src="img/juego6.jpg" alt="">
-                
-            </div>
-
-            <div class="face back">
-                <h3>WORLD OF STARS</h3>
-                <p>Wordl of Stars" es un juego de aventuras y estrategia ambientado en un universo lleno de estrellas, planetas y civilizaciones. </p>
-                <div class="link"><a href="#"><button class="info-button">Más Información</button></a></div>
+   
+    <body>
+        <!--MENU DESPLEGABLE-->
+        <header>
+           <ul class="nav">
+               <li><a href="Index.html">Quienes Somos</a></li>
+               <li><a href="JuegosExpansiones.html">Juegos</a></li>
+               <li><a href="Productos.html">Productos</a></li>
+               <li><a href="Personajes.html">Personajes</a></li>
+               <li><a href="Contacto.html">Contacto</a></li>
+               <!-- Agregando los botones -->
+               <li class="buttons">
+                   <a href="InicioSesion.html"><button>Iniciar sesión</button></a>
+                   <a href="Registro.html"><button>Registrarse</button></a>
+               </li>
+           </ul>
+       </header>
+   
+   
+       
+       <h1 style="text-align: center; padding-top: 80px; color: white;">ÚLTIMAS NOVEDADES</h1>
+      
+       <div class="video-background">
+           <div class="video-wrap">
+             <video autoplay muted loop id="video-bg">
+               <source src="img/31806-388997519_small.mp4" type="video/mp4">
+             </video>
+           </div>
+         </div>
+     
+    
+       <div class="wrapper">
+   
+           <div class="container" id="c0">
+               <div class="image" >
+                   <img src="img/juego1.jpg" >
+                  
+               </div>
+           </div>
+   
+           <div class="container" id="c1">
+               <div class="image" >
+                   <img src="img/juego2.jpg" alt="Stonehenge">
+                   
+               </div>
+           </div>
+   
+           <div class="container" id="c2">
+               <div class="image" >
+                   <img src="img/juego3.jpg" alt="Tower of Pisa">
+                  
+               </div>
+           </div>
+   
+   
+           
+           <div class="container" id="c3">
+               <div class="image" >
+                   <img src="img/juego4.jpg" >
                  
-            </div>
-        </div>
-    </div>
-
+               </div>
+           </div>
+           
+           <div class="container" id="c4">
+               <div class="image">
+                   <img src="img/juego5.jpg">
+               </div>
+           </div>
+           
+           <div class="container" id="c5">
+               <div class="image">
+                   <img src="img/juego6.jpg">
+               </div>
+           </div>
+   
+      
+   
+       </div>
+   
+    <!-- Parte inferior con noticias -->
+   <div class="parteinferior">
+       <h1 style="text-align: center; padding-top: -80px;color: white;">¡ NUEVAS NOTICIAS !</h1>
+       <!-- Contenido de noticias -->
+       <ul class="noticias-list">
+           <!-- Noticia 1 -->
+           <li class="noticias-item">
+               <a href="https://vandal.elespanol.com/noticia/1350771054/helldivers-2-ya-no-se-puede-comprar-en-steam-en-multiples-paises-mientras-arrecian-las-resenas-negativas/">
+                   <img src="img/6783361984.jpg" alt="Noticia 1" class="noticias-imagen" id="hellsdriver">
+               </a>
+               <h2>Helldrivers 2 no se podrá comprar en Steam</a></h2>
+           </li>
+           <!-- Noticia 2 -->
+           <li class="noticias-item">
+               <a href="https://vandal.elespanol.com/noticia/1350771025/todos-los-juegos-a-los-que-podras-jugar-totalmente-gratis-este-fin-de-semana-del-3-al-6-de-mayo/">
+                   <img src="img/gratis.jpg" alt="Noticia 2" class="noticias-imagen" id="gratis">
+               </a>
+               <h2>Los mejores juegos gratis</a></h2>
+           </li>
+           <!-- Noticia 3 -->
+           <li class="noticias-item">
+               <a href="https://vandal.elespanol.com/noticia/1350771061/el-siguiente-tomb-raider-podria-ser-un-mundo-abierto-y-estaria-ambientado-en-india-segun-un-rumor/">
+                   <img src="img/tombraider.avif" alt="Noticia 3" class="noticias-imagen">
+               </a>
+               <h2>La realidad del nuevo Tomb Raider</a></h2>
+           </li>
+           <!-- Noticia 4 -->
+           <li class="noticias-item">
+               <a href="https://vandal.elespanol.com/noticia/1350771060/gray-zone-warfare-triunfa-en-steam-y-vende-medio-millon-de-unidades-en-cuatro-dias/">
+                   <img src="img/greyzone.jpg" alt="Noticia 4" class="noticias-imagen" id="greyzone">
+               </a>
+               <h2>Gray Zone , el mejor "Shooter" ?</a></h2>
+           </li>
+          
+       </ul>
+   </div>
 </body>
 </html>
