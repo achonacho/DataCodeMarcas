@@ -1,0 +1,278 @@
+
+/* ---------------------------------------MENÚ DESPLEGABLE ------------------------------------------------- */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /* Ajustar el relleno superior para evitar que el contenido se solape con el menú fijo */
+    padding-top: 60px; /* Ajustar según la altura del menú */
+    background-color: #252645;
+}
+
+header {
+    position: fixed; /* Hacer que el menú sea fijo */
+    top: 0; /* Fijar en la parte superior de la página */
+    width: 100%;
+    background-color: #1a1929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Verdana";
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    background-color: #1a1929; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 55px;
+}
+
+.nav li {
+    width: auto;
+    
+}
+.nav li a {
+    color: azure;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    margin-left: 25px;
+}
+.nav li a:hover {
+    background-color: #252645;
+}
+/* Estilo para los botones */
+.buttons button {
+    font-family: "Verdana";
+    background-color: #6160d7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px; /* Espacio entre los botones */
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #252645;
+}
+
+/* Alineación de los botones */
+.buttons {
+    margin-left: auto; /* Mueve los botones al margen derecho */
+    display: flex;
+    align-items: center; /* Centra los botones verticalmente */
+}
+/*INDEX*/
+.IntroduccionIndex{
+    float: left;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+}
+.TituloIntroduccionIndex{
+    text-align: center;
+}
+.HistoriaIndex{
+    float: right;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+    top: 140px;
+}
+.TituloHistoriaIndex{
+    text-align: center;
+}
+.ValoresIndex{
+    float: left;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+    top: 180px;
+}
+.TituloValoresIndex{
+    text-align: center;
+}
+.MisionVisionIndex{
+    float: right;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+    top: 280px;
+}
+.TituloMisionVisionIndex{
+    text-align: center;
+}
+.EquipoIndex{
+    float: left;
+    color: white;
+    text-align: center;
+    background-color: #1a1929;
+    position: relative;
+    top: 340px;
+}
+.TituloEquipoIndex{
+    text-align: center;
+}
+/* ---------------------------------------------------------------------- */
+.partejuegos {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 300px;
+    height: 500px;
+    perspective: 900px;
+}
+
+.contenedorjuegos {
+    position: absolute;
+    top: 0%;
+    width: calc(33.333% - 20px);
+    height: 100%;
+    transition: transform 0.5s ease;
+    transform: rotateX(58deg) scale(0.6);
+    perspective: 300px;
+    box-shadow: 0px 20px 50px #555;
+    animation: entry 1s linear 1;
+    margin: 20px;
+    display: block;
+    margin: auto;
+}
+
+#j0 {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+    z-index: 300;
+    box-shadow: 0px 20px 100px #555;
+    left: -450px;
+}
+
+#j1 {
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0px 20px 100px #555;
+    z-index: 0;
+    left: 400px;
+}
+
+#j2 {
+    z-index: 0;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0px 20px 100px #555;
+    left: -0px;
+}
+
+#j3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+    z-index: 300;
+    box-shadow: 0px 20px 100px #555;
+    left: -460px;
+    top: 110%;
+}
+
+#j4 {
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0px 20px 100px #555;
+    z-index: 0;
+    left: 420px;
+    top: 110%;
+}
+
+#j5 {
+    z-index: 0;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0px 20px 100px #555;
+    left: -0px;
+    top: 110%;
+}
+
+.contenedorjuegos:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+}
+
+.JUEGOS {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 90%;
+    height: 45%;
+    margin-bottom: 10px;
+    background: linear-gradient(to top, #eba65b 30%, #d99267 100%);
+}
+
+@keyframes entry {
+    0% {
+        top: -20%;
+        opacity: 0.1;
+    }
+    100% {
+        top: 0%;
+    }
+}
+/* Estilo para la parte inferior con noticias */
+.parteinferior {
+    margin-top: 88%;
+    background-color:  #6160d7;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilo para las imágenes de noticias */
+.noticias-imagen {
+    max-width: 900px; /* Ancho máximo de las imágenes */
+    max-height: 300px; /* Altura máxima de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción de aspecto */
+    display: block; /* Para asegurarse de que las imágenes se muestren correctamente */
+    margin: 0 auto 20px; /* Margen superior e inferior de 20px, margen izquierdo y derecho automáticos */
+}
+
+/* Estilo para el contenedor de la lista de noticias */
+.noticias-list {
+    text-align: center; /* Centrar el contenido horizontalmente */
+    list-style: none; /* Quitar viñetas de la lista */
+    padding: 0; /* Eliminar el relleno predeterminado de la lista */
+    display: flex; /* Utilizar el modelo de caja flexible */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+/* Estilo para cada elemento de la lista de noticias */
+.noticias-item {
+    width: 300px; /* Ancho fijo de 300px */
+    margin: 10px; /* Margen de separación entre cada elemento */
+}
+
+/* Estilo para el título de la noticia */
+.noticias-item h2 {
+    margin-top: 10px; /* Espacio superior */
+    font-size: 18px; /* Tamaño de fuente */
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+
+/* Estilos para las imágenes con ID greyzone, gratis y hellsdriver */
+#greyzone, #gratis, #hellsdriver {
+    height: 300px;
+    width: 300px;
+}
