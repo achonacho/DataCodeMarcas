@@ -86,7 +86,7 @@ ul {
     text-align: center;
     background-color: #1a1929;
     position: relative;
-    top: 140px;
+    top: 230px;
 }
 .TituloHistoriaIndex{
     text-align: center;
@@ -98,7 +98,7 @@ ul {
     text-align: center;
     background-color: #1a1929;
     position: relative;
-    top: 180px;
+    top: 280px;
 }
 .TituloValoresIndex{
     text-align: center;
@@ -110,7 +110,7 @@ ul {
     text-align: center;
     background-color: #1a1929;
     position: relative;
-    top: 280px;
+    top: 480px;
 }
 .TituloVisionIndex{
     text-align: center;
@@ -122,12 +122,19 @@ ul {
     text-align: center;
     background-color: #1a1929;
     position: relative;
-    top: 340px;
+    top: 545px;
 }
 .TituloEquipoIndex{
     text-align: center;
     color: #6160d7;
 }
+.VideoIndex {
+    position:relative;
+    width: 80px; 
+    height: 150px; 
+    top: 600px;
+}
+
 /*--------------------------------------------------JUEGOS/EXPANSIONES-------------------------------------------------------*/
 
 .contenedorarriba,
