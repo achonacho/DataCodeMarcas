@@ -260,7 +260,7 @@ footer {
 }
 
 /* Estilo para el título de la noticia */
-.noticias-item h2 {
+.noticias-item #h2 {
     margin-top: 10px; /* Espacio superior */
     font-size: 18px; /* Tamaño de fuente */
     text-align: center; /* Centrar el texto horizontalmente */
@@ -279,8 +279,6 @@ footer {
     display: block; /* Para asegurarse de que las imágenes se muestren correctamente */
     margin: 0 auto 20px; /* Margen superior e inferior de 20px, margen izquierdo y derecho automáticos */
 }
-
-
 /*----------------------------------------------------------INICIO SESIÓN / REGISTRO------------------------------------------------------------------------*/
 
 
