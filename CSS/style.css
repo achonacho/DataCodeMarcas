@@ -583,6 +583,34 @@ h1 {
     margin-top: auto;
 }
 
+/*Cuadro a la derecha*/
+
+.contenedorBlanco{
+    position: absolute;
+    left: 1100px;
+    top: 150px;
+    border: 2px #fff solid;
+    border-radius: 40px;
+}
+
+.logoBlanco1{
+    margin: 15px;
+   width: 300px;
+   height: auto;
+}
+
+.textoProductos {
+    position: absolute;
+    left: 1050px;
+    top: 450px;
+}
+
+.tituloProductosSuperior {
+    color: white;
+    font-family: "Verdana";
+    font-size: 40px;
+}
+
 .imagen_fondo_productos {
    width: 1000px;
    height: 650px;
@@ -800,6 +828,7 @@ h1 {
 
 .container_mercancia1 {
     background-color: #6160d7;
+    border-radius: 40px;
     position: relative;
     display: inline-block; 
     margin: 40px 50px; 
@@ -810,6 +839,7 @@ h1 {
 
 .container_mercancia2 {
     background-color: #6160d7;
+    border-radius: 40px;
     position: relative;
     display: inline-block; 
     margin: 40px 50px;
@@ -820,6 +850,7 @@ h1 {
 
 .container_mercancia3 {
     background-color: #6160d7;
+    border-radius: 40px;
     position: relative;
     display: inline-block; 
     margin: 40px 50px;
