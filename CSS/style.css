@@ -194,6 +194,7 @@ footer {
     height: 360px;
     float: left;
     position: relative;
+    font-size: 23px;
 }
 .TituloIntroduccionIndex{
     text-align: center;
@@ -208,6 +209,7 @@ footer {
     top: 230px;
     width: 100%;
     height: 360px;
+    font-size: 23px;
 }
 .TituloHistoriaIndex{
     text-align: center;
@@ -222,6 +224,7 @@ footer {
     top: 280px;
     width: 100%;
     height: 360px;
+    font-size: 23px;
 }
 .TituloValoresIndex{
     text-align: center;
@@ -236,6 +239,7 @@ footer {
     top: 480px;
     width: 100%;
     height: 360px;
+    font-size: 23px;
 }
 .TituloVisionIndex{
     text-align: center;
@@ -249,6 +253,7 @@ footer {
     top: 545px;
     width: 100%;
     height: 360px;
+    font-size: 23px;
 }
 .TituloEquipoIndex{
     text-align: center;
@@ -536,7 +541,6 @@ p{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .card {
     width: 300px;
     margin: 10px;
@@ -617,6 +621,54 @@ p{
     width: 300px;
     height: 300px;
 }
+/* Fondo para World of Stars */
+.container_cards:nth-of-type(1) {
+    background-image: url('../img/FondoWorldsofStars.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Fondo para Kingdom Worlds */
+.container_cards:nth-of-type(2) {
+    background-image: url('../img/FondoKingDomWorlds.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Fondo para The Last Ashes */
+.container_cards:nth-of-type(3) {
+    background-image: url('../img/FondoTheLastAshes.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Fondo para Assasins Dragons */
+.container_cards:nth-of-type(4) {
+    background-image: url('../img/FondoAssasinsDragons.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Fondo para Monster Hunters */
+.container_cards:nth-of-type(5) {
+    background-image: url('../img/FondoMonsterHunter.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Fondo para Final Empire */
+.container_cards:nth-of-type(6) {
+    background-image: url('../img/FondoFinalEmpire.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 /*----------------------------------------------------------PRODUCTOS------------------------------------------------------------------------*/
 
 /*Imagen de fonde para los productos*/
