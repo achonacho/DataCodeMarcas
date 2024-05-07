@@ -171,81 +171,120 @@ footer {
     color: #fff; /* Color del texto del footer */
     text-align: center; /* Centrar el texto del footer */
     padding: 20px; /* Espaciado interno del footer */
-    position:fixed;
+    position: relative;
     width: 100%; /* Ancho completo del footer */
     bottom: 0px; /* Alinear el footer en la parte inferior de la página */
+    top: 20px;
 }
 /*--------------------------------------------------QUIENES SOMOS (index)-------------------------------------------------------*/
+.ContenedorIndex{
+    width: 100%;
+    height: auto;
+    background-color: #252645;
+}
 .IntroduccionIndex{
     color: white;
     text-align: center;
-    background-color: #1a1929;
-    position: relative;
+    background-color: #252645;  
     width: 100%;
     top: 0px;
+    height: auto;
+    float: left;
+    position: relative;
 }
 .TituloIntroduccionIndex{
     text-align: center;
     color: #6160d7;
+    font-size: 100px;
 }
 .HistoriaIndex{
     color: white;
     text-align: center;
-    background-color: #1a1929;
-    position: relative;
+    background-color: #252645;
     top: 230px;
     width: 100%;
+    height: auto;
 }
 .TituloHistoriaIndex{
     text-align: center;
     color: #6160d7;
+    font-size: 100px;
 }
 .ValoresIndex{
     
     color: white;
     text-align: center;
-    background-color: #1a1929;
-    position: relative;
+    background-color: #252645;
+   
     top: 280px;
     width: 100%;
+    height: auto;
 }
 .TituloValoresIndex{
     text-align: center;
     color: #6160d7;
+    font-size: 100px;
 }
 .MisionVisionIndex{
    
     color: white;
     text-align: center;
-    background-color: #1a1929;
-    position: relative;
+    background-color: #252645;
+   
     top: 480px;
     width: 100%;
+    height: auto;
 }
 .TituloVisionIndex{
     text-align: center;
     color: #6160d7;
+    font-size: 100px;
 }
 .EquipoIndex{
    
     color: white;
     text-align: center;
-    background-color: #1a1929;
-    position: relative;
+    background-color: #252645;
+   
     top: 545px;
     width: 100%;
+    height: auto;
 }
 .TituloEquipoIndex{
     text-align: center;
     color: #6160d7;
+    font-size: 100px;
 }
 .VideoIndex {
     position:relative;
     width: 100%; 
     height: auto; 
-    top: 600px;
 }
+.IntroduccionImagen{
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px;
+}
+.HistoriaImagen{
 
+    width: 250px;
+    height: 250px;
+}
+.ValoresImagen{
+    width: 250px;
+    height: 250px;
+}
+.MisionImagen{
+
+    width: 250px;
+    height: 250px;
+}
+.EquipoImagen{
+    width: 250px;
+    height: 250px;
+}
 /*--------------------------------------------------JUEGOS/EXPANSIONES-------------------------------------------------------*/
 .partejuegos {
     position: absolute;
@@ -470,17 +509,11 @@ p{
 /*----------------------------------------------------------PERSONAJES 2------------------------------------------------------------------------*/
 .TituloPpalPersonajes{
     color: white;
-}
-
-h1 {
     margin-top: auto;
     text-align: center;
     font-size: 80px;
-    color: #6160d7;
     font-family: "Verdana";
-    /*Insertar tipo grafia para la web*/
 }
-
 .titulo1 {
     margin-top: 250px;
 }
