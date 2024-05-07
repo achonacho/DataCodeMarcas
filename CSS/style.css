@@ -182,78 +182,78 @@ footer {
     height: auto;
     background-color: #252645;
 }
+.hr{
+  border: solid #252645 4px;
+}
 .IntroduccionIndex{
     color: white;
     text-align: center;
-    background-color: #252645;  
+    background-color: #1a1929;  
     width: 100%;
     top: 0px;
-    height: auto;
+    height: 360px;
     float: left;
     position: relative;
 }
 .TituloIntroduccionIndex{
     text-align: center;
-    color: #6160d7;
-    font-size: 100px;
+    color: white;
+    font-size: 60px;
 }
 .HistoriaIndex{
+    float: right;
     color: white;
     text-align: center;
-    background-color: #252645;
+    background-color: #1a1929;
     top: 230px;
     width: 100%;
-    height: auto;
+    height: 360px;
 }
 .TituloHistoriaIndex{
     text-align: center;
-    color: #6160d7;
-    font-size: 100px;
+    color: white;
+    font-size: 60px;
 }
 .ValoresIndex{
-    
     color: white;
     text-align: center;
-    background-color: #252645;
-   
+    background-color: #1a1929;
+    float: left;
     top: 280px;
     width: 100%;
-    height: auto;
+    height: 360px;
 }
 .TituloValoresIndex{
     text-align: center;
-    color: #6160d7;
-    font-size: 100px;
+    color: white;
+    font-size: 60px;
 }
 .MisionVisionIndex{
-   
     color: white;
     text-align: center;
-    background-color: #252645;
-   
+    background-color: #1a1929;
+    float: right;
     top: 480px;
     width: 100%;
-    height: auto;
+    height: 360px;
 }
 .TituloVisionIndex{
     text-align: center;
-    color: #6160d7;
-    font-size: 100px;
+    color: white;
+    font-size: 60px;
 }
 .EquipoIndex{
-   
     color: white;
     text-align: center;
-    background-color: #252645;
-   
+    background-color: #1a1929;
     top: 545px;
     width: 100%;
-    height: auto;
+    height: 360px;
 }
 .TituloEquipoIndex{
     text-align: center;
-    color: #6160d7;
-    font-size: 100px;
+    color: white;
+    font-size: 60px;
 }
 .VideoIndex {
     position:relative;
@@ -261,29 +261,39 @@ footer {
     height: auto; 
 }
 .IntroduccionImagen{
-    width: 250px;
-    height: 250px;
-    float: right;
+    float: left;
+    width: 280px;
+    height: 280px;
     margin-top: 30px;
-    margin-right: 80px;
+    margin-left: 80px;
 }
 .HistoriaImagen{
-
-    width: 250px;
-    height: 250px;
+    float: left;
+    width: 280px;
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 80px;
 }
 .ValoresImagen{
-    width: 250px;
-    height: 250px;
+    float: left;
+    width: 280px;
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 80px;
 }
 .MisionImagen{
-
-    width: 250px;
-    height: 250px;
+    float: left;
+    width: 280px;
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 80px;
 }
 .EquipoImagen{
-    width: 250px;
-    height: 250px;
+    float: left;
+    width: 280px;
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 80px;
 }
 /*--------------------------------------------------JUEGOS/EXPANSIONES-------------------------------------------------------*/
 .partejuegos {
