@@ -7,38 +7,74 @@
     <link rel="icon" href="img/fav-iconII.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Registro de usuario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+    --azul: #134074;
+    --azulOscuro: #0B2545;
+    --azulGris: #8DA9C4;
+    --blanco: #fff;
+    --fuente: 'Quicksand', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--azulOscuro);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/img/textura-pared-estuco-azul-marino-relieve-decorativo-abstracto-grunge-fondo-color-rugoso-gran-angular_1258-28311.avif);
+    
+}
+    </style>
+
+
 </head>
 <body>
-    <form class="formulario" action="#" method="POST" id="registroForm">
-        <h1>Registro de Usuario</h1>
-        <div class="contenedor">
-            <div class="input-contenedor">
-                <img class="icon" src="icon/persona.png" />
-                <input id="username" type="text" placeholder="Nombre de Usuario">
-            </div>
-
-            <div class="input-contenedor">
-                <img class="icon" src="icon/carta.png" />
-                <input id="email" type="text" placeholder="Correo electrónico">
-            </div>
-
-            <div class="input-contenedor">
-                <img class="icon" src="icon/llave.png" />
-                <input id="password" type="password" placeholder="Contraseña">
-            </div>
-
-            <!-- Cuadro de selección para aceptar términos de privacidad -->
-            <div class="terminos-contenedor">
-                <input type="checkbox" id="terminos" name="terminos">
-                <label for="terminos">Acepto los términos de privacidad</label>
-            </div>
-
-            <input type="submit" value="Registro" class="button">
-
-            <p>¿Ya tiene una cuenta? <a class="link" href="InicioSesion.html"><span class="registro">Inicio de
-                        Sesión</span></a></p>
+    <div class="contenedor-formularioo contenedor">
+        <div class="img-formulario">
+            
         </div>
-    </form>
+
+        <form class="formularioo">
+            <div class="textoo-formulario">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Inicia sesión con tu cuenta</p>
+            </div>
+            <div class="inputt">
+                <label for="usuario">Usuario</label>
+                <input placeholder="Ingresa tu nombre" type="text" id="usuario">
+            </div>
+            <div class="inputt">
+                <label for="email">Correo electrónico</label>
+                <input placeholder="Ingresa tu correo electrónico" type="email" id="email">
+            </div>
+            <div class="inputt">
+                <label for="contraseña">Contraseña</label>
+                <input placeholder="Ingresa tu contraseña" type="password" id="contraseña">
+            </div>
+            <div class="passwordd-olvidada">
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos"> <span class="textoo-terminos">Acepto los términos de privacidad</span></label>
+            </div>
+            <div class="inputt">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
 
     <script>
         // Función para registrar un nuevo usuario

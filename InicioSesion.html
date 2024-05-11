@@ -6,26 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="img/fav-iconII.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <title>Inicio Sesión</title>
+    <style>
+    html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+    }
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0B2545;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/img/textura-pared-estuco-azul-marino-relieve-decorativo-abstracto-grunge-fondo-color-rugoso-gran-angular_1258-28311.avif);
+}
+    </style>
 </head>
 
 <body>
-    <form class="formulario" action="Index.html" method="GET" onsubmit="return validarFormulario()">
-        <h1>LOGIN DE USUARIO</h1>
-        <div class="contenedor">
-            <div class="input-contenedor">
-                <img class="icon" src="icon/carta.png" />
-                <input id="email" type="text" placeholder="Correo electrónico">
-            </div>
-            <div class="input-contenedor">
-                <img class="icon" src="icon/llave.png" />
-                <input id="password" type="password" placeholder="Contraseña">
-            </div>
-            <input type="submit" value="Login" class="button">
-            <p>Al registrarse, acepta nuestras condiciones de uso y política de privacidad</p>
-            <p>¿No tienes cuenta? <a class="link" href="Registro.html"><span class="registro">Registro</span></a></p>
+    <div class="contenedor-formulario contenedor">
+        <div class="imagen-formulario">
+            
         </div>
-    </form>
+
+        <form class="formulario">
+            <div class="texto-formulario">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Inicia sesión con tu cuenta</p>
+            </div>
+            <div class="input">
+                <label for="usuario">Usuario</label>
+                <input placeholder="Ingresa tu nombre" type="text" id="usuario">
+            </div>
+            <div class="input">
+                <label for="contraseña">Contraseña</label>
+                <input placeholder="Ingresa tu contraseña" type="password" id="contraseña">
+            </div>
+            <div class="password-olvidada">
+        
+                <p class="texto">Al registrarse, acepta nuestras condiciones de uso y política de privacidad</p>
+                <p class="texto">¿No tienes cuenta? <a class="link" href="formulario2.html"><span class="registro">Registro</span></a></p>
+    
+            </div>
+            <div class="input">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+           
     <script>
         // Definir los usuarios y contraseñas correctas
         const usuarios = {

@@ -533,91 +533,258 @@ footer {
     display: block; /* Para asegurarse de que las imágenes se muestren correctamente */
     margin: 0 auto 20px; /* Margen superior e inferior de 20px, margen izquierdo y derecho automáticos */
 }
-/*----------------------------------------------------------INICIO SESIÓN / REGISTRO------------------------------------------------------------------------*/
+/*----------------------------------------------------------INICIO SESIÓN -----------------------------------------------------------------------*/
 
+.contenedor-formulario {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 95%;
+    box-shadow: 0 0 30px white;
+    display: flex;
+}
 
-.contenedor{
-    width:100% ;
-    padding: 15px;
+.imagen-formulario {
+    background-image: url('/img/giphy.gif');
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    flex: 0 0 calc(40%);
+    position: relative;
+}
 
+.imagen-formulario::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(141, 169, 196, 0.5), rgba(19, 64, 116, 0.5));
 }
-.formulario{
-    
-    background: white;
-    margin-top: 100px;
-}
-h1{
-    padding-top: 20px;  
-    text-align: center;
-    color: black;
-    font-size: 40px;
 
-}
-img{
-    padding-top: 4px;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-
-}
-input[type="text"],input[type="password"]{
-
-    text-align: center;
-    font-size: 24px;
-    width: 80%;
-    padding: 10px;
-    border: none;
-
-}
-.input-contenedor {
-    margin-bottom: 15px;
-    border: 1px aolid #aaa;
-}
-.button{
-
-    border: none;
-    width: 90%;
-    font-size: 24px;
-    color: white;
-    background-color: #6160d7;
-    padding: 15px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-
-
-}
-.button:hover{
-
-    background-color: #1a1929;
-}
-p{
-    text-align: center;
-}
-.link{
-    text-decoration: none;
-    color: #1a1929;
-    font-weight: 600px;
-}
-.link:hover{
-    color: #1a1929;
-}
-@media(min-width: 768px){
-    .formulario{
-         margin-top: 150px;
-         width: 550px;
-         margin: auto;
-         border-radius: 2%;
+@media (min-width: 768px) {
+    .imagen-formulario {
+        height: auto;
+        background-position: right;
     }
 }
 
-.registro{
-    color: blue;
+@media (min-width: 1200px) {
+    .imagen-formulario {
+        background-position: center;
+    }
 }
 
-.terminos-contenedor {
-    text-align: center; 
-    margin-bottom: 20px; 
+.formulario {
+    padding: 30px;
+    background-color: #134074;
 }
+
+.texto-formulario h2,
+.input label,
+.password-olvidada a,
+.texto-formulario p {
+    color: #fff;
+}
+
+.texto-formulario h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.texto-formulario p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.input label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.password-olvidada a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6160d7;
+}
+
+.input input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input input[type="submit"] {
+    background-color: #8DA9C4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.input input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #0B2545;
+}
+
+.texto {
+    color: #fff;
+}
+
+.registro {
+    color: #6160d7;
+}
+/*----------------------------------------------------------REGISTRO USUARIO -----------------------------------------------------------------------*/
+
+
+.contenedor-formularioo {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 95%;
+    box-shadow: 0 0 30px white;
+}
+
+.img-formulario {
+    background-image: url('/img/giphy.gif');
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    flex: 0 0 calc(40%);
+    position: relative;
+}
+
+.img-formulario::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(141, 169, 196, 0.5), rgba(19, 64, 116, 0.5));
+}
+
+@media (min-width: 768px) {
+    .img-formulario {
+        height: auto;
+        background-position: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-formulario {
+        background-position: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor-formularioo {
+        display: flex;
+    }
+}
+
+.formularioo {
+    padding: 30px;
+    background-color: var(--azul);
+    height: auto;
+    width: 100%;
+}
+
+.textoo-formulario h2,
+.inputt label,
+.passwordd-olvidada a,
+.textoo-formulario p {
+    color: var(--blanco);
+}
+
+.textoo-formulario h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.textoo-formulario p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.inputt label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.passwordd-olvidada a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6160d7;
+}
+
+.inputt input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputt input[type="submit"] {
+    background-color: var(--azulGris);
+    color: var(--blanco);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.inputt input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--azulOscuro);
+}
+
+.textoo-terminos {
+    color: white;
+}
+
+.inputt input[type="email"] {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*----------------------------------------------------------PERSONAJES 2------------------------------------------------------------------------*/
 .TituloPpalPersonajes{
