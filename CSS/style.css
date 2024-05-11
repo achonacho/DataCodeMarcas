@@ -8,6 +8,7 @@ body {
     /* Ajustar el relleno superior para evitar que el contenido se solape con el menú fijo */
     padding-top: 60px; /* Ajustar según la altura del menú */
     background-color: #252645;
+    
 }
 
 header {
@@ -310,7 +311,7 @@ footer {
 .card {
     position: relative;
     width: 350px; /* Aumenta el tamaño de la tarjeta si es necesario */
-    height: 400px;
+    height: 100px;
     margin: 20px;
     overflow: hidden; /* Asegura que el contenido no se desborde */
 }
@@ -791,17 +792,17 @@ footer {
     color: white;
     margin-top: auto;
     text-align: center;
-    font-size: 80px;
-    font-family: "Verdana";
+    font-size: 270px;
+    font-family: 'Quicksand', sans-serif;
 }
 .titulo1 {
     margin-top: 250px;
 }
 
 .container_cards{
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -810,6 +811,7 @@ footer {
     width: 300px;
     margin: 10px;
     transition: all ease 300ms;
+    height: 600px;
 }
 
 .card:hover {
