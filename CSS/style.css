@@ -544,7 +544,7 @@ footer {
 }
 
 .imagen-formulario {
-    background-image: url('/img/giphy.gif');
+    background-image: url(../img/giphy.gif);
     background-position: center center;
     background-size: cover;
     height: 200px;
@@ -651,7 +651,7 @@ footer {
 }
 
 .img-formulario {
-    background-image: url('/img/giphy.gif');
+    background-image: url(../img/giphy.gif);
     background-position: center center;
     background-size: cover;
     height: 200px;
