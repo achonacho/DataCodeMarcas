@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>DataCode</title>
 </head>
+
 <body>
     <!--MENU DESPLEGABLE-->
     <header>
@@ -23,5 +25,43 @@
             </li>
         </ul>
     </header>
+
+
+    <!--ZONA IZQUIERDA: mapa-->
+
+    <div class="contenedor_izquierdo">
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115612.50051693743!2d-3.866650726760595!3d40.407371179871426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd419031a94d45e5%3A0x375a8b6ca7a1dc4c!2sUniversidad%20Europea%20de%20Madrid!5e0!3m2!1ses!2ses!4v1715515059828!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span class="texto_mapa">
+                <h3><a href="https://maps.app.goo.gl/pJky9Rv3gUTNEukh7" target="_blank">¡Visitanos ahora!</a></h3>
+            </span>
+        </div>
+
+
+    </div>
+
+    <!--ZONA IZQUIERDA: formulario de contacto-->
+
+    <div class="contenedor_derecho">
+        <h1 class="titulo_contacto_formulario">Contactanos</h1>
+
+        <form action="mailto:22303629@live.uem.es" method="post">
+            <label for="nombre" class="label_nombres">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email" class="label_nombres">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje" class="label_nombres">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
+
 </html>
