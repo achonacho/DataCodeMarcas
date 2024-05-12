@@ -760,33 +760,6 @@ footer {
     outline: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------------------------------------------PERSONAJES 2------------------------------------------------------------------------*/
 .TituloPpalPersonajes{
     color: white;
@@ -1365,6 +1338,53 @@ footer {
     margin-left: 50px;
     text-align: left;
     position: relative;
+}
+
+/*---------------------------------------------------------RESPONSIVE---------------------------------------------------*/
+
+@media (max-width: 320px) {
+    /* Agrega aquí tus estilos específicos para dispositivos de hasta 320px */
+    body {
+        font-size: 14px;
+    }
+    /* Ejemplo: Cambiar el tamaño de fuente para pantallas pequeñas */
+}
+
+/* Estilos para dispositivos de al menos 321px y hasta 576px */
+@media (min-width: 321px) and (max-width: 576px) {
+    /* Agrega aquí tus estilos específicos para dispositivos entre 321px y 576px */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* Ejemplo: Centrar el contenido en pantallas medianas */
+}
+
+/* Estilos para dispositivos de al menos 577px y hasta 992px */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Agrega aquí tus estilos específicos para dispositivos entre 577px y 992px */
+    .header {
+        padding: 20px;
+    }
+    /* Ejemplo: Aumentar el padding del encabezado en pantallas medianas */
+}
+
+/* Estilos para dispositivos de al menos 993px y hasta 1200px */
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Agrega aquí tus estilos específicos para dispositivos entre 993px y 1200px */
+    .sidebar {
+        display: none;
+    }
+    /* Ejemplo: Ocultar la barra lateral en pantallas más grandes */
+}
+
+/* Estilos para dispositivos de al menos 1201px */
+@media (min-width: 1201px) {
+    /* Agrega aquí tus estilos específicos para dispositivos de al menos 1201px */
+    .main-content {
+        width: 70%;
+    }
+    /* Ejemplo: Ajustar el ancho del contenido principal en pantallas extra grandes */
 }
 
 
