@@ -780,7 +780,7 @@ footer {
     color: white;
     margin-top: auto;
     text-align: center;
-    font-size: 270px;
+    font-size: 160px;
     font-family: 'Quicksand', sans-serif;
 }
 .titulo1 {
@@ -878,7 +878,7 @@ footer {
 }
 /* Fondo para World of Stars */
 .container_cards:nth-of-type(1) {
-    background-image: url('../img/FondoWorldsofStars.jpeg');
+    background-image: url('../img/FondoWorldOfStarsOpac.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -886,7 +886,7 @@ footer {
 
 /* Fondo para Kingdom Worlds */
 .container_cards:nth-of-type(2) {
-    background-image: url('../img/FondoKingDomWorlds.jpeg');
+    background-image: url('../img/FondoKingsOfWorldOpac.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -894,7 +894,7 @@ footer {
 
 /* Fondo para The Last Ashes */
 .container_cards:nth-of-type(3) {
-    background-image: url('../img/FondoTheLastAshes.webp');
+    background-image: url('../img/FondoTheLastAshesOpac.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -902,7 +902,7 @@ footer {
 
 /* Fondo para Assasins Dragons */
 .container_cards:nth-of-type(4) {
-    background-image: url('../img/FondoAssasinsDragons.jpeg');
+    background-image: url('../img/FondoAssasinsDragoOpac2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -910,7 +910,7 @@ footer {
 
 /* Fondo para Monster Hunters */
 .container_cards:nth-of-type(5) {
-    background-image: url('../img/FondoMonsterHunter.jpeg');
+    background-image: url('../img/FondoMonsterHuntersOpac.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -918,7 +918,7 @@ footer {
 
 /* Fondo para Final Empire */
 .container_cards:nth-of-type(6) {
-    background-image: url('../img/FondoFinalEmpire.jpeg');
+    background-image: url('../img/FondoFinalEmpireOpac.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
