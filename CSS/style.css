@@ -9,6 +9,7 @@ body {
     padding-top: 60px; /* Ajustar según la altura del menú */
     background-color: #252645;
     
+    
 }
 
 header {
@@ -175,8 +176,9 @@ footer {
     position: relative;
     width: 100%; /* Ancho completo del footer */
     bottom: 0px; /* Alinear el footer en la parte inferior de la página */
-    top: 20px;
+    top: 0px;
 }
+
 /*--------------------------------------------------QUIENES SOMOS (index)-------------------------------------------------------*/
 .ContenedorIndex{
     width: 100%;
@@ -184,7 +186,7 @@ footer {
     background-color: #252645;
 }
 .hr{
-  border: solid #252645 4px;
+  border: solid darkgrey 0.5px;
 }
 .IntroduccionIndex{
     color: white;
@@ -216,6 +218,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 60px;
+    
 }
 .ValoresIndex{
     color: white;
@@ -253,13 +256,14 @@ footer {
     background-color: #1a1929;
     top: 545px;
     width: 100%;
-    height: 640px;
     font-size: 23px;
+    margin-bottom: 0;
 }
 .TituloEquipoIndex{
     text-align: center;
     color: white;
     font-size: 60px;
+    
 }
 .VideoIndex {
     position:relative;
@@ -295,7 +299,7 @@ footer {
     margin-right: 80px;
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------CARTAS IMAGENES NUESTRAS-----------------------------------------------------------------------*/
 .card-containere {
     display: flex;
     justify-content: center;
@@ -307,6 +311,7 @@ footer {
     width: 350px; /* Aumenta el tamaño de la tarjeta si es necesario */
     height: 100px;
     margin: 20px;
+    top: 70px;
     overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
@@ -335,6 +340,7 @@ footer {
 }
 
 .card .face.front {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,7 +373,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    box-shadow: 0px 5px 10px #6160d7;
+    box-shadow: 10px 10px 10px #6160d7;
 }
 
 .card .back .link {
