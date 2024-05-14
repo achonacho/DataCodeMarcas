@@ -536,7 +536,7 @@ footer {
 }
 /*----------------------------------------------------------INICIO SESIÓN -----------------------------------------------------------------------*/
 
-.contenedor-formulario {
+.contenedor-forrmulario {
     max-width: 800px;
     margin: 0 auto;
     width: 95%;
@@ -576,50 +576,51 @@ footer {
     }
 }
 
-.formulario {
+.forrmularioiniciosesion {
     padding: 30px;
-    background-color: #134074;
+    /* background-color: #134074; */
+    height: auto;
 }
 
-.texto-formulario h2,
-.input label,
-.password-olvidada a,
-.texto-formulario p {
+.texto-formularioiniciosesion h2,
+.cajaformularioinicio label,
+.passwordd-olvidada a,
+.texto-formularioiniciosesion p {
     color: #fff;
 }
 
-.texto-formulario h2 {
+.texto-formularioiniciosesion h2 {
     font-size: 30px;
     text-align: center;
 }
 
-.texto-formulario p {
+.texto-formularioiniciosesion p {
     font-size: 18px;
     text-align: center;
 }
 
-.input label {
+.cajaformularioinicio label {
     display: block;
     font-size: 16px;
     font-weight: bold;
     margin: 8px 0;
 }
 
-.password-olvidada a {
+.passwordd-olvidada a {
     display: inline-block;
     margin-top: 10px;
     font-size: 16px;
     color: #6160d7;
 }
 
-.input input {
+.cajaformularioinicio input {
     width: 100%;
     padding: 8px 12px;
     border-radius: 5px;
     outline: none;
 }
 
-.input input[type="submit"] {
+/* .cajaformularioinicio input[type="submit"] {
     background-color: #8DA9C4;
     color: #fff;
     font-size: 16px;
@@ -629,16 +630,30 @@ footer {
     transition: background-color 0.3s ease-in-out;
 }
 
-.input input[type="submit"]:hover {
+.cajaformularioinicio input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #0B2545;
+} */
+#botoniniciosesion{
+    background-color: #8DA9C4;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+#botoniniciosesion:hover{
     cursor: pointer;
     background-color: #0B2545;
 }
 
-.texto {
+.textoform {
     color: #fff;
 }
 
-.registro {
+.registroform {
     color: #6160d7;
 }
 /*----------------------------------------------------------REGISTRO USUARIO -----------------------------------------------------------------------*/
@@ -1399,8 +1414,8 @@ form {
     font-size: 20px;
 }
 
-input[type="text"],
-input[type="email"],
+input[type="texto"],
+input[type="emaill"],
 textarea {
     width: 100%;
     padding: 10px;

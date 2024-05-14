@@ -20,42 +20,57 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: #0B2545;
     display: flex;
     align-items: center;
     height: 100vh;
-    background-image: url(img/textura-pared-estuco-azul-marino-relieve-decorativo-abstracto-grunge-fondo-color-rugoso-gran-angular_1258-28311.avif);
+   
 }
+
     </style>
 </head>
 
 <body>
-    <div class="contenedor-formulario contenedor">
+      <!--MENU DESPLEGABLE-->
+      <header>
+        <ul class="nav">
+            <li><a href="Index.html">Quiénes Somos</a></li>
+            <li><a href="JuegosExpansiones.html">Juegos</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Personajes.html">Personajes</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <!-- Agregando los botones -->
+            <li class="buttons">
+                <a href="InicioSesion.html"><button>Iniciar sesión</button></a>
+                <a href="Registro.html"><button>Registrarse</button></a>
+            </li>
+        </ul>
+    </header>
+    <div class="contenedor-forrmulario contenedor">
         <div class="imagen-formulario">
             
         </div>
 
-        <form class="formulario">
-            <div class="texto-formulario">
+        <form class="forrmularioiniciosesion">
+            <div class="texto-formularioiniciosesion">
                 <h2>Bienvenido de nuevo</h2>
                 <p>Inicia sesión con tu cuenta</p>
             </div>
-            <div class="input">
+            <div class="cajaformularioinicio">
                 <label for="usuario">Usuario</label>
                 <input placeholder="Ingresa tu nombre" type="text" id="usuario">
             </div>
-            <div class="input">
+            <div class="cajaformularioinicio">
                 <label for="contraseña">Contraseña</label>
                 <input placeholder="Ingresa tu contraseña" type="password" id="contraseña">
             </div>
-            <div class="password-olvidada">
+            <div class="passwordd-olvidada">
         
-                <p class="texto">Al registrarse, acepta nuestras condiciones de uso y política de privacidad</p>
-                <p class="texto">¿No tienes cuenta? <a class="link" href="Registro.html"><span class="registro">Registro</span></a></p>
+                <p class="textoform">Al registrarse, acepta nuestras condiciones de uso y política de privacidad</p>
+                <p class="textoform">¿No tienes cuenta? <a class="link" href="Registro.html"><span class="registroform">Registro</span></a></p>
     
             </div>
-            <div class="input">
-                <input type="submit" value="Login">
+            <div class="inpuut">
+                <input type="submit" id="botoniniciosesion" value="Iniciar Sesión">
             </div>
         </form>
     </div>
