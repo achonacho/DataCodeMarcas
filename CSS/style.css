@@ -24,6 +24,12 @@ header {
     z-index: 1000; /* Asegurar que esté por encima de otros elementos */
 }
 
+/* CSS PARA LA IMAGEN DE DATACODELOGO EN EL MENU */
+header img {
+    width: 50px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    margin-left: 40px; /* Espacio entre el logo y el primer elemento de la lista de navegación */
+}
 
 #slider{
     width: 80%;
@@ -485,6 +491,50 @@ footer {
     z-index: 400;
 }
 
+.texto-juego {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0; /* Inicialmente, el texto estará oculto */
+    transition: opacity 0.3s ease;
+    text-align: center;
+    pointer-events: none; /* Evitar que el texto afecte al evento de ratón */
+    height: auto;
+    width: 380px;
+    height: 500px;
+    z-index: 1; /* Asegurarse de que el texto esté por encima de la imagen */
+}
+
+.contenedorjuegos:hover .texto-juego {
+    opacity: 1; /* Mostrar el texto al pasar el ratón sobre el contenedor de juegos */
+}
+
+.contenedorjuegos img {
+    transition: filter 0.3s ease; /* Agregar una transición para suavizar el cambio */
+    
+}
+/* HACE QUE SE APLIQUE EL FILTRO A LAS IMAGENES MENOS A LA QUE SE ESPECIFICA EN SU INTERIOR */
+.contenedorjuegos:hover > img:not(.imagendentrojuegos) {
+    filter: blur(5px); /* Aplicar un filtro de desenfoque a las imágenes del contenedor al pasar el ratón */
+}
+.texto-juego .imagendentrojuegos {
+    width: 65px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Altura automática para mantener la proporción de aspecto */
+    display: block; /* Para asegurarse de que la imagen se muestre correctamente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+.parrafosjuegos{
+    text-align: center;
+    margin-top: 40px;
+}
+.titulosjuegos{
+    margin-top: 70px;
+}
 .JUEGOS {
     position: absolute;
     width: 400px;
@@ -502,9 +552,20 @@ footer {
     }
 }
 
+.textoultimoslanzamientos{
+  color: white;
+  text-align: center; 
+  font-size: 60px;
+  margin-top: 40px;
+}
+.textonuevasnoticias{
+  margin-top: 80%;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
 /* Estilo para el contenedor de la lista de noticias */
 .noticias-list {
-    margin-top: 80%;
     color: white;
     text-align: center; /* Centrar el contenido horizontalmente */
     list-style: none; /* Quitar viñetas de la lista */
@@ -533,9 +594,7 @@ footer {
     height: 300px;
     width: 300px;
 }
-#hellsdriver{
-   margin-left: -600px;
-}
+
 
 /* Ajustamos el tamaño de las imágenes de las noticias */
 .noticias-imagen {
