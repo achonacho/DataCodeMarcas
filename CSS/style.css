@@ -274,11 +274,11 @@ footer {
     margin-left: 80px;
 }
 .HistoriaImagen{
-    float: left;
+    float: right;
     width: 280px;
     height: 280px;
     margin-top: 30px;
-    margin-left: 80px;
+    margin-right: 80px;
 }
 .ValoresImagen{
     float: left;
@@ -288,11 +288,11 @@ footer {
     margin-left: 80px;
 }
 .MisionImagen{
-    float: left;
+    float: right;
     width: 280px;
     height: 280px;
     margin-top: 30px;
-    margin-left: 80px;
+    margin-right: 80px;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------*/
