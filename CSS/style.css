@@ -866,6 +866,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .card {
     width: 300px;
