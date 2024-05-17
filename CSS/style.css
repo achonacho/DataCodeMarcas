@@ -203,13 +203,9 @@ footer {
     height: 360px;
     float: left;
     position: relative;
-    font-size: 23px;
+    
 }
-.TituloIntroduccionIndex{
-    text-align: center;
-    color: white;
-    font-size: 60px;
-}
+
 .HistoriaIndex{
     float: right;
     color: white;
@@ -218,14 +214,9 @@ footer {
     top: 230px;
     width: 100%;
     height: 360px;
-    font-size: 23px;
+   
 }
-.TituloHistoriaIndex{
-    text-align: center;
-    color: white;
-    font-size: 60px;
-    
-}
+
 .ValoresIndex{
     color: white;
     text-align: center;
@@ -234,13 +225,9 @@ footer {
     top: 280px;
     width: 100%;
     height: 360px;
-    font-size: 23px;
+   
 }
-.TituloValoresIndex{
-    text-align: center;
-    color: white;
-    font-size: 60px;
-}
+
 .MisionVisionIndex{
     color: white;
     text-align: center;
@@ -249,12 +236,7 @@ footer {
     top: 480px;
     width: 100%;
     height: 360px;
-    font-size: 23px;
-}
-.TituloVisionIndex{
-    text-align: center;
-    color: white;
-    font-size: 60px;
+   
 }
 .EquipoIndex{
     color: white;
@@ -262,14 +244,7 @@ footer {
     background-color: #1a1929;
     top: 545px;
     width: 100%;
-    font-size: 23px;
     margin-bottom: 0;
-}
-.TituloEquipoIndex{
-    text-align: center;
-    color: white;
-    font-size: 60px;
-    
 }
 .VideoIndex {
     position:relative;
@@ -304,7 +279,16 @@ footer {
     margin-top: 30px;
     margin-right: 80px;
 }
+#titulosh1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
 
+}
+
+#parrafos{
+    font-size: 23px;
+}
 /*-------------------------------------------CARTAS IMAGENES NUESTRAS-----------------------------------------------------------------------*/
 .card-containere {
     display: flex;
@@ -614,7 +598,7 @@ footer {
 }
 
 .imagen-formulario {
-    background-image: url(../img/giphy.gif);
+    background-image: url(../video/giphy.gif);
     background-position: center center;
     background-size: cover;
     height: 200px;
@@ -725,7 +709,7 @@ footer {
 }
 
 .img-formulario {
-    background-image: url(../img/giphy.gif);
+    background-image: url(../video/giphy.gif);
     background-position: center center;
     background-size: cover;
     height: 200px;
