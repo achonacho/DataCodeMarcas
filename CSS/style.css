@@ -1740,6 +1740,44 @@ input[type="submit"]:hover {
     .buttons a {
         margin: 5px 0; 
     }
+
+    /*---------------------------------------------------------PRODUCTOS---------------------------------------------------*/  
+
+    body {
+        overflow-x: hidden;
+    }
+    .contenedorBlanco {
+        position: relative;
+        margin: 0 auto;
+        top: 20px;
+        width: 90%;
+        text-align: left;
+        flex-direction: column; 
+    }
+
+    .logoBlanco1 {
+        position: relative;
+        width: 150px;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+
+    .textoProductos {
+        position: relative;
+        top: 20px;
+        left: auto;
+        right: auto;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .tituloProductosSuperior {
+        font-size: 24px;
+    }
+
+    .camisa1, .juguete2, .juguete1, .juguete3, .libro1, .libro2, .libro3, .gorra1, .gorra2, .gorra3, .medias1, .medias2, .fondo_productos {
+        display: none;
+    }
 }
 
 /* Estilos para dispositivos con ancho entre 577px y 992px */
@@ -1848,6 +1886,43 @@ input[type="submit"]:hover {
     .buttons a {
         margin: 5px 0; 
     }
+     /*---------------------------------------------------------PRODUCTOS---------------------------------------------------*/  
+
+     body {
+        overflow-x: hidden;
+    }
+    .contenedorBlanco {
+        position: relative;
+        margin: 0 auto;
+        top: 20px;
+        width: 60%;
+        text-align: left;
+        flex-direction: column; 
+    }
+
+    .logoBlanco1 {
+        position: relative;
+        width: 150px;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+
+    .textoProductos {
+        position: relative;
+        top: 20px;
+        left: auto;
+        right: auto;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .tituloProductosSuperior {
+        font-size: 30px;
+    }
+
+    .camisa1, .juguete2, .juguete1, .juguete3, .libro1, .libro2, .libro3, .gorra1, .gorra2, .gorra3, .medias1, .medias2, .fondo_productos {
+        display: none;
+    }
 }
 
 @media (min-width: 993px) {
@@ -1855,9 +1930,3 @@ input[type="submit"]:hover {
         display: none; 
     }
 }
-
-
-
-
-
-
