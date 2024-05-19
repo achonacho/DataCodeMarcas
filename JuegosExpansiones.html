@@ -58,6 +58,7 @@
      <header>
          <!-- IMAGEN DE DATACODE EN EL MENU -->
          <img src="img/logodatacode.png" alt="Logo de la empresa">
+         <button id="menu-toggle" class="menu-toggle">Menú</button>
         <ul class="nav">
             <li><a href="Index.html">Quienes Somos</a></li>
             <li><a href="JuegosExpansiones.html">Juegos</a></li>
@@ -184,4 +185,18 @@
     ©copyright Creado por DataCode.
 </footer>
 </body>
+<script>
+    // Esperar a que el DOM esté completamente cargado
+   document.addEventListener('DOMContentLoaded', function() {
+       // Obtener el botón de menú y el menú
+       const menuToggle = document.getElementById('menu-toggle');
+       const navMenu = document.querySelector('.nav');
+   
+       // Agregar un evento clic al botón de menú
+       menuToggle.addEventListener('click', function() {
+           // Alternar la clase 'active' para mostrar u ocultar el menú
+           navMenu.classList.toggle('active');
+       });
+   });
+   </script>
 </html>

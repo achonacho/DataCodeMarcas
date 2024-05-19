@@ -7,9 +7,7 @@
 body {
     /* Ajustar el relleno superior para evitar que el contenido se solape con el menú fijo */
     padding-top: 60px; /* Ajustar según la altura del menú */
-    background-color: #252645;
-    
-    
+    background-color: #252645;   
 }
 
 header {
@@ -54,12 +52,10 @@ header img {
 #imagen1{
     position: relative;
     background-image: url(../img/mando.webp);
-    
     width: 100%;
     height: 500px;
     background-size: cover;
     background-position: center;
-
 }
 
 #imagen2{
@@ -126,8 +122,6 @@ header img {
     }
 }
 
-
-
 ul {
     list-style: none;
     width: 100%;
@@ -174,6 +168,7 @@ ul {
     display: flex;
     align-items: center; /* Centra los botones verticalmente */
 }
+
 footer {
     background-color: #1a1929; /* Color de fondo del footer */
     color: #fff; /* Color del texto del footer */
@@ -1508,38 +1503,227 @@ input[type="submit"]:hover {
 
 /*---------------------------------------------------------RESPONSIVE---------------------------------------------------*/
 
-@media (max-width: 320px) {
-    body {
-        font-size: 14px;
+@media (max-width: 576px) {
+
+/*---------------------------------------------------------CONTACTO---------------------------------------------------*/   
+    .contenedor_izquierdo {
+        width: auto; 
+        height: auto; 
+        margin: 20px 0; 
+    }
+
+    .mapa {
+        width: 100%; 
+        height: auto; 
+        border-width: 10px; 
+        border-radius: 0; 
+        position: static; 
+        top: auto; 
+        left: auto; 
+        margin: 0; 
+        background-image: url(../img/mapaMadrid.jpg); 
+    }
+
+    .mapa iframe {
+        width: 100%;
+    }
+
+    .texto_mapa {
+        font-size: 18px; 
+        background-color: #1a1929;
+    }
+    .texto_mapa a{
+        font-size: 18px; 
+        background-color: #1a1929;
+        color: white
+    }
+
+    .contenedor_derecho {
+        position: static; 
+        margin: 20px auto; 
+    }
+
+    .titulo_contacto_formulario,
+    .label_nombres {
+        font-size: 18px; 
+    }
+
+    form {
+        max-width: 300px; 
+    }
+
+    input[type="texto"],
+    input[type="emaill"],
+    textarea {
+        font-size: 16px; 
+    }
+
+    input[type="submit"] {
+        padding: 12px 16px; 
+        font-size: 18px; 
+    }
+
+    /*---------------------------------------------------------MENU---------------------------------------------------*/  
+    .nav {
+        display: none; 
+    }
+
+    .menu-toggle {
+        display: block; 
+        position: fixed; 
+        top: auto; 
+        right: 40px; 
+        z-index: 1000; 
+        background-color: #6160d7; 
+        border: none; 
+        border-radius: 4px; 
+        padding: 5px 10px; 
+        cursor: pointer; 
+        color: white; 
+        font-family: "Verdana"; 
+    }
+
+    .nav.active {
+        display: block; 
+        position: fixed; 
+        top: 40px; 
+        left: 0;
+        background-color: #1a1929;
+        border: 1px solid #000; 
+        padding: 10px; 
+        width: 100%; 
+        z-index: 999; 
+    }
+
+    .nav li {
+        width: 100%; 
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .buttons a {
+        margin: 5px 0; 
     }
 }
 
-
-@media (min-width: 321px) and (max-width: 576px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
+/* Estilos para dispositivos con ancho entre 577px y 992px */
 @media (min-width: 577px) and (max-width: 992px) {
-    .header {
-        padding: 20px;
+   /*---------------------------------------------------------CONTACTO---------------------------------------------------*/  
+    .contenedor_izquierdo {
+        width: auto; 
+        height: auto; 
+        margin: 20px 0; 
+    }
+
+    .mapa {
+        width: 100%; 
+        height: auto; 
+        border-width: 10px; 
+        border-radius: 0; 
+        position: static; 
+        top: auto; 
+        left: auto; 
+        margin: 0; 
+        background-image: url(../img/mapaMadrid.jpg); 
+    }
+
+    .mapa iframe {
+        width: 100%;
+    }
+
+    .texto_mapa {
+        font-size: 18px; 
+        background-color: #1a1929;
+    }
+    .texto_mapa a {
+        font-size: 18px; 
+        background-color: #1a1929;
+        color: white;
+    }
+
+    .contenedor_derecho {
+        position: static; 
+        margin: 20px auto; 
+    }
+
+    .titulo_contacto_formulario,
+    .label_nombres {
+        font-size: 18px; 
+    }
+
+    form {
+        max-width: 300px; 
+    }
+
+    input[type="texto"],
+    input[type="emaill"],
+    textarea {
+        font-size: 16px; 
+    }
+
+    input[type="submit"] {
+        padding: 12px 16px; 
+        font-size: 18px; 
+    }
+
+/*---------------------------------------------------------MENU---------------------------------------------------*/  
+    .nav {
+        display: none; 
+    }
+
+    .menu-toggle {
+        display: block; 
+        position: fixed; 
+        top: auto; 
+        right: 40px; 
+        z-index: 1000; 
+        background-color: #6160d7; 
+        border: none; 
+        border-radius: 4px; 
+        padding: 5px 10px; 
+        cursor: pointer; 
+        color: white; 
+        font-family: "Verdana"; 
+    }
+
+    .nav.active {
+        display: block; 
+        position: fixed; 
+        top: 40px; 
+        left: 0; 
+        background-color: #1a1929; 
+        border: 1px solid #000; 
+        padding: 10px; 
+        width: 100%; 
+        z-index: 999; 
+    }
+
+    .nav li {
+        width: 100%; 
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .buttons a {
+        margin: 5px 0; 
     }
 }
 
-@media (min-width: 993px) and (max-width: 1200px) {
-    .sidebar {
-        display: none;
+@media (min-width: 993px) {
+    .menu-toggle {
+        display: none; 
     }
 }
-
-@media (min-width: 1201px) {
-    .main-content {
-        width: 70%;
-    }
-}
-
 
 
 
