@@ -296,7 +296,7 @@ footer {
 .card {
     position: relative;
     width: 350px; /* Aumenta el tamaño de la tarjeta si es necesario */
-    height: 100px;
+    height: 500px;
     margin: 20px;
     top: 70px;
     overflow: hidden; /* Asegura que el contenido no se desborde */
@@ -318,29 +318,30 @@ footer {
     /* background-color: #fff; Añade un color de fondo para evitar que la descripción y la imagen se mezclen con el fondo de la tarjeta */
     border-radius: 12px;
     box-shadow: 0 0 9px #6160d7;
-    width: 350px;
-    height: 350px;
+    /**width: 350px;*/
+    /**height: 350px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.card .face.front {
+.card .face.front, .card .face .back {
     
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .card .front img {
-    width: 350px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px; 
 }
 
-.card .back,
+
 .card .front {
     padding: 20px; /* Añade espacio interno para la imagen y la descripción */
 }
