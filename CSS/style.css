@@ -1536,9 +1536,336 @@ footer {
     text-align: left;
     position: relative;
 }
-
-
-
+/*---------------------------------------------------------RESPONSIVE JUEGOS---------------------------------------------------*/
+/* Para pantallas de hasta 1200px */
+@media (max-width: 1200px) {
+    body {
+        overflow-x: hidden; /* Ocultar la barra de desplazamiento horizontal */
+    }
+    .partejuegos {
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        width: 150px;
+        height: 250px;
+        perspective: 1000px;
+    }
+    .contenedorjuegos {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%) rotateX(55deg) scale(0.5);
+        width: 70%;
+        height: 70%;
+        perspective: 400px;
+        box-shadow: 0px 10px 25px #555;
+        transition: transform 0.5s ease;
+        animation: entry 1s linear 1;
+    }
+    #j0, #j1, #j2, #j3, #j4, #j5 {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        box-shadow: 0px 20px 100px #555;
+    }
+    #j0 {
+        z-index: 300;
+        left: -180px;
+    }
+    #j1 {
+        z-index: 0;
+        left: 260px;
+    }
+    #j2 {
+        z-index: 0;
+        left: 40px;
+    }
+    #j3 {
+        z-index: 300;
+        left: -180px;
+        top: 210%;
+    }
+    #j4 {
+        z-index: 0;
+        left: 260px;
+        top: 210%;
+    }
+    #j5 {
+        z-index: 0;
+        left: 40px;
+        top: 210%;
+    }
+    .JUEGOS img {
+        width: 350px;
+    }
+    .textoultimoslanzamientos {
+        margin-top: 5px;
+        font-size: 35px;
+    }
+    .textonuevasnoticias {
+        font-size: 35px;
+        margin-top: 120%;
+    }
+    .texto-juego {
+        top: 50%;
+        left: 44%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        pointer-events: none;
+        width: 332px;
+        height: 440px;
+        z-index: 1;
+    }
+    .texto-juego .imagendentrojuegos {
+        width: 70px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .parrafosjuegos {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .titulosjuegos {
+        margin-top: 10px;
+        font-size: 28px;
+    }
+}
+/* Para pantallas de hasta 767px */
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden; /* Ocultar la barra de desplazamiento horizontal */
+    }
+    .partejuegos {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        width: 120px;
+        height: 200px;
+        perspective: 800px;
+    }
+    .contenedorjuegos {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%) rotateX(45deg) scale(0.4);
+        width: 60%;
+        height: 60%;
+        perspective: 300px;
+        box-shadow: 0px 8px 20px #555;
+        transition: transform 0.5s ease;
+        animation: entry 1s linear 1;
+    }
+    #j0, #j1, #j2, #j3, #j4, #j5 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 15px 80px #555;
+    }
+    #j0 {
+        z-index: 300;
+        left: -150px;
+    }
+    #j1 {
+        z-index: 0;
+        left: 220px;
+    }
+    #j2 {
+        z-index: 0;
+        left: 30px;
+    }
+    #j3 {
+        z-index: 300;
+        left: -150px;
+        top: 180%;
+    }
+    #j4 {
+        z-index: 0;
+        left: 220px;
+        top: 180%;
+    }
+    #j5 {
+        z-index: 0;
+        left: 30px;
+        top: 180%;
+    }
+    .JUEGOS img {
+        width: 300px;
+    }
+    .textoultimoslanzamientos {
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    .textonuevasnoticias {
+        font-size: 30px;
+        margin-top: 100%;
+    }
+    .texto-juego {
+        top: 45%;
+        left: 40%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 8px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        pointer-events: none;
+        width: 280px;
+        height: 380px;
+        z-index: 1;
+    }
+    .texto-juego .imagendentrojuegos {
+        width: 60px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 8px;
+    }
+    .parrafosjuegos {
+        margin-top: 4px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .titulosjuegos {
+        margin-top: 8px;
+        font-size: 24px;
+    }
+}
+/* Para pantallas de hasta 572px y 992px */
+@media (max-width: 572px) and  (max-width: 992px) {
+    
+    body {
+        overflow-x: hidden; /* Ocultar la barra de desplazamiento horizontal */
+    }
+    .partejuegos {
+        position: absolute;
+        top: 17%;
+        left: 40%;
+        width: 100px;
+        height: 200px;
+        perspective: 900px;
+    }
+    .contenedorjuegos {
+        position: absolute;
+        top: 20%; /* Ajusta la posición vertical al 20% del contenedor principal */
+        left: 50%; /* Ajusta la posición horizontal al 50% del contenedor principal */
+        transform: translateX(-50%) rotateX(58deg) scale(0.4); /* Ajusta el tamaño y la rotación */
+        width: 60%; /* Ajusta el ancho al 60% del contenedor principal */
+        height: 60%; /* Ajusta la altura al 60% del contenedor principal */
+        perspective: 300px;
+        box-shadow: 0px 10px 25px #555; /* Ajusta la sombra */
+        transition: transform 0.5s ease;
+        animation: entry 1s linear 1;
+    }
+    #j0 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 300;
+        box-shadow: 0px 20px 100px #555;
+        left: -144px; /* Reducir el espacio entre j0 y j1 */
+        width: 50px;
+        height: 50px;
+    }
+    
+    #j1 {
+        box-shadow: 0px 20px 100px #555;
+        z-index: 0;
+        left: 124px; /* Reducir el espacio entre j1 y j2 */
+        width: 50px;
+        height: 50px;
+    }
+    
+    #j2 {
+        z-index: 0;
+        box-shadow: 0px 20px 100px #555;
+        left: -10px; /* Reducir el espacio entre j2 y j3 */
+        width: 50px;
+        height: 50px;
+    }
+    
+    #j3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 300;
+        box-shadow: 0px 20px 100px #555;
+        left: -144px; /* Reducir el espacio entre j3 y j4 */
+        top: 210%;
+          width: 50px;
+        height: 50px;
+        
+    }
+    
+    #j4 {
+        box-shadow: 0px 20px 100px #555;
+        z-index: 0;
+        left: 124px;/* Reducir el espacio entre j4 y j5 */
+        top: 210%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    #j5 {
+        z-index: 0;
+        box-shadow: 0px 20px 100px #555;
+        left: -10px; /* Reducir el espacio entre j5 y j0 */
+        top: 210%;
+          width: 50px;
+        height: 50px;
+    }
+    .JUEGOS img{
+      width: 300px;
+      
+    }
+    .textoultimoslanzamientos{
+        margin-top: 5px;
+        font-size: 39px;
+    }
+    .textonuevasnoticias{
+        font-size: 39px;
+        margin-top: 180%;
+    }
+    .texto-juego {
+        position: absolute;
+        top: 50%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        opacity: 0; /* Inicialmente, el texto estará oculto */
+        transition: opacity 0.3s ease;
+        text-align: center;
+        pointer-events: none; /* Evitar que el texto afecte al evento de ratón */
+        height: auto;
+        width: 280px;
+        height: 350px;
+        z-index: 1; /* Asegurarse de que el texto esté por encima de la imagen */
+    }
+    .texto-juego .imagendentrojuegos {
+        width: 65px; /* Ajusta el ancho según sea necesario */
+        height: auto; /* Altura automática para mantener la proporción de aspecto */
+        display: block; /* Para asegurarse de que la imagen se muestre correctamente */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    }
+    .parrafosjuegos{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .titulosjuegos{
+        margin-top: -10px;
+      font-size: 30px;
+    }
+}
 /*---------------------------------------------------------CONTACTO---------------------------------------------------*/
 
 .contenedor_izquierdo {
@@ -1931,3 +2258,4 @@ input[type="submit"]:hover {
         display: none; 
     }
 }
+
